@@ -46,7 +46,7 @@ public class Fil {
 		try {
 			sc = new Scanner(new File(filnavn));
 			int antall = Integer.parseInt(sc.nextLine());
-			fa = new Filmarkiv(antall);
+			fa = new Filmarkiv2();
 
 			for(int i = 0; i < antall; i++) {
 				String filmLinje = sc.nextLine();

@@ -73,6 +73,8 @@ public class Filmarkiv2 implements FilmarkivADT {
 				resultatTab[antallMatches] = node.getElement();
 				antallMatches++;
 			}
+
+			node = node.getNeste();
 		}
 
 		return trimTab(resultatTab, antallMatches);
@@ -90,6 +92,8 @@ public class Filmarkiv2 implements FilmarkivADT {
 				resultatTab[antallMatches] = node.getElement();
 				antallMatches++;
 			}
+
+			node = node.getNeste();
 		}
 
 		return trimTab(resultatTab, antallMatches);
@@ -104,6 +108,8 @@ public class Filmarkiv2 implements FilmarkivADT {
 			if(node.getElement().getSjanger() == sjanger) {
 				antallSjanger++;
 			}
+
+			node = node.getNeste();
 		}
 
 		return antallSjanger;
